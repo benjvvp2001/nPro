@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline"[routerLink]="['/list-viajes']"></ion-icon>
+    <ion-title style="text-align: center;">Informacion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+    <div class="container">
+      <img src="/assets/icon/lavado-de-autos.png" alt="" width="150px">
+      <div *ngIf="car$ | async as car; else loading">
+          <ion-card>
+            <ion-card-header>
+              <h4>Telefono: {{ car.telefono }}</h4>
+              <h4>Costo: {{ car.tarifa }}</h4>
+              <h4>Capacidad: {{ car.capacidad }}</h4>
+              <h4>Patente: {{ car.patente }}</h4>
+              <h4>Modelo: {{ car.nombre }}</h4>
+              <ion-card-title class="textos">Destino: {{ car.destino }}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+      </div>
+    </div>
+    <ng-template #loading>
+      <ion-spinner name="dots"></ion-spinner> Cargando...
+    </ng-template>
+  </ion-content>
+  

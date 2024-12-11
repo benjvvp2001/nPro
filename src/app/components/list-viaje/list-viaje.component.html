@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let car of cars">
+      <ion-card ion-button [routerLink]="['/info-viaje', car.id]">
+        <ion-card-header>
+          <ion-card-subtitle>Telefono: {{ car.telefono }}</ion-card-subtitle>
+          <ion-card-subtitle>Costo: {{ car.tarifa }}</ion-card-subtitle>
+          <ion-card-subtitle>Capacidad: {{ car.capacidad }}</ion-card-subtitle>
+          <ion-card-subtitle>Patente: {{ car.patente }}</ion-card-subtitle>
+          <ion-card-subtitle>Modelo: {{ car.nombre }}</ion-card-subtitle>
+          <ion-card-title>Destino: {{ car.destino }}</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

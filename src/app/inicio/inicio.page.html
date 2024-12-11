@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+    <ion-icon name="person-circle-outline" slot="end" style="font-size: 40px;" [routerLink]="['/perfil']"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content>
+
+    <div id="container">
+      <h1>¿Que deseas hacer hoy?</h1>
+      <div class="btnD">
+        <button ion-button [routerLink]="['/list-viajes']" class="btn">Pasajero</button>
+        <!-- aca condiciono -->
+        <button (click)="validar()" class="btn">Conductor</button><br>
+        <button class="btn" (click)="logout()" class="btn">Cerrar Sesión</button>
+      </div><br>
+    </div>
+</ion-content>
+  
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="foot"></ion-title>
+    <div class="square">
+      <img src="http://purepng.com/public/uploads/large/purepng.com-car-wheelcar-wheelcarwheeltire-1701527840615iovkz.png" alt="">
+    </div>
+  </ion-toolbar>
+</ion-footer>

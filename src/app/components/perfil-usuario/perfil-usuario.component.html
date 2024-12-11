@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline"[routerLink]="['/inicio']"></ion-icon>
+    <ion-title style="text-align: center;">Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+    <div class="container">
+      <h1>Datos de Usuario</h1>
+      <img src="/assets/icon/user-interface.png" alt="" width="150px">
+      <div>
+          <ion-card>
+            <ion-card-header >
+              <h4>Correo: {{ user }}</h4>
+              
+            </ion-card-header>
+          </ion-card>
+      </div>
+    </div>
+
+  </ion-content>
+  

@@ -1,0 +1,27 @@
+<div id="container">
+  <h1>Datos del viaje</h1>
+  <form (ngSubmit)="addCar()">
+   
+    <ion-item>
+      <ion-label position=""floating></ion-label>
+      <ion-input name="destino" placeholder="Ingrese destino" [(ngModel)]="car.destino">Destino</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position=""floating></ion-label>
+      <ion-input type="number" name="capacidad" placeholder="Ingrese capacidad" [(ngModel)]="car.capacidad">Capacidad</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position=""floating></ion-label>
+      <ion-input type="number" name="tarifa" placeholder="Ingrese tarifa" [(ngModel)]="car.tarifa">Tarifa</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position=""floating></ion-label>
+      <ion-input type="number" name="telefono" placeholder="Ingrese telefono" [(ngModel)]="car.telefono">Telefono</ion-input>
+    </ion-item>
+
+    <button type="submit" class="btn">Guardar</button>
+  </form>
+</div>

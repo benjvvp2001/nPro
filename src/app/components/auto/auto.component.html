@@ -1,0 +1,18 @@
+<div id="container">
+  <h1>Datos del viaje</h1>
+  <form (ngSubmit)="guardaauto()">
+    <ion-item>
+      <ion-label></ion-label>
+      <ion-input name="nombre" placeholder="Ingrese Modelo" [(ngModel)]="car.modelo" required>Modelo</ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position=""floating></ion-label>
+      <ion-input name="patente" placeholder="Ingrese patente" [(ngModel)]="car.patente">Patente</ion-input>
+    </ion-item>
+
+    
+
+    <button type="submit" (click)="ver()" class="btn">Guardar</button>
+  </form>
+</div>
