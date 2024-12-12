@@ -71,4 +71,11 @@ export class CarsService {
       .valueChanges();
   }
   
+  private destinoActual: string='';
+  setDestino(destino: string){
+    this.destinoActual=destino;
+  }
+  getDestino(): string{
+    return this.destinoActual;
+  }
 }

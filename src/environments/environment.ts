@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  mapPK: 'pk.eyJ1IjoiYXBwbW92aWwiLCJhIjoiY20ybnJocmhrMDhxZjJrcHN6azNqZXk1ZSJ9.1fZzK5jTAiNUxwurKR5tNw',
   firebaseConfig : {
     apiKey: "AIzaSyAv4h34ZrlEVTUtCE9P0fZ-xAeoaWJk8sA",
   authDomain: "sqlzo-56b50.firebaseapp.com",

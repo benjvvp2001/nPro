@@ -30,9 +30,19 @@ export class CarsComponent  implements OnInit {
       this.car.patente = this.dataService.getpatente();
       this.car.modelo = this.dataService.getpatente();
 
-      this.carService.crea(this.car).then(()=>{
+      this.carService
+      .crea(this.car)
+      .then(()=>{
         alert("Viaje agregado exitosamente!")
-        this.car= {nombre:"",modelo:"",patente:"",destino:"",capacidad:0,tarifa:0,telefono:0};
+        this.carService.setDestino(this.car.destino);
+        this.car= {
+          nombre:"",
+          modelo:"",
+          patente:"",
+          destino:"",
+          capacidad:0,
+          tarifa:0,
+          telefono:0};
         this.router.navigate(["/inicio"]);
     }).catch(error=>{alert("Error al momento de registrar destino!"+error)})
   }
