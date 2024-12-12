@@ -1,7 +1,8 @@
 export const environment = {
   production: true,
+  mapPK: 'pk.eyJ1IjoiYXBwbW92aWwiLCJhIjoiY20ybnJocmhrMDhxZjJrcHN6azNqZXk1ZSJ9.1fZzK5jTAiNUxwurKR5tNw',
   firebaseConfig : {
-    apiKey: "AIzaSyAv4h34ZrlEVTUtCE9P0fZ-xAeoaWJk8sA",
+  apiKey: "AIzaSyAv4h34ZrlEVTUtCE9P0fZ-xAeoaWJk8sA",
   authDomain: "sqlzo-56b50.firebaseapp.com",
   projectId: "sqlzo-56b50",
   storageBucket: "sqlzo-56b50.appspot.com",
